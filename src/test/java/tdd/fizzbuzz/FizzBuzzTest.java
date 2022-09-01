@@ -1,6 +1,7 @@
 package tdd.fizzbuzz;
 
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class FizzBuzzTest {
@@ -15,8 +16,8 @@ public class FizzBuzzTest {
         String actualMessage = student.callNumber(1);
 
         //then
-        assertEquals(expectedMessage,actualMessage);
-     }
+        assertEquals(expectedMessage, actualMessage);
+    }
 
     @Test
     void should_return_fizz_when_divisible_given_3() {
@@ -28,84 +29,84 @@ public class FizzBuzzTest {
         String actualMessage = student.callNumber(3);
 
         //then
-        assertEquals(expectedMessage,actualMessage);
-     }
-     
-     @Test
-     void should_return_buzz_when_divisible_given_5() {
-         //give
-         FizzBuzz student = new FizzBuzz();
-         String expectedMessage = "Buzz";
+        assertEquals(expectedMessage, actualMessage);
+    }
 
-         //when
-         String actualMessage = student.callNumber(5);
+    @Test
+    void should_return_buzz_when_divisible_given_5() {
+        //give
+        FizzBuzz student = new FizzBuzz();
+        String expectedMessage = "Buzz";
 
-         //then
-         assertEquals(expectedMessage,actualMessage);
-      }
+        //when
+        String actualMessage = student.callNumber(5);
 
-      @Test
-      void should_return_whizz_when_divisible_given_7() {
-          //give
-          FizzBuzz student = new FizzBuzz();
-          String expectedMessage = "Whizz";
+        //then
+        assertEquals(expectedMessage, actualMessage);
+    }
 
-          //when
-          String actualMessage = student.callNumber(7);
+    @Test
+    void should_return_whizz_when_divisible_given_7() {
+        //give
+        FizzBuzz student = new FizzBuzz();
+        String expectedMessage = "Whizz";
 
-          //then
-          assertEquals(expectedMessage,actualMessage);
-       }
+        //when
+        String actualMessage = student.callNumber(7);
 
-       @Test
-       void should_return_FizzBuzz_when_divisible_given_3_and_5() {
-           //give
-           FizzBuzz student = new FizzBuzz();
-           String expectedMessage = "FizzBuzz";
+        //then
+        assertEquals(expectedMessage, actualMessage);
+    }
 
-           //when
-           String actualMessage = student.callNumber(15);
+    @Test
+    void should_return_FizzBuzz_when_divisible_given_3_and_5() {
+        //give
+        FizzBuzz student = new FizzBuzz();
+        String expectedMessage = "FizzBuzz";
 
-           //then
-           assertEquals(expectedMessage,actualMessage);
-        }
+        //when
+        String actualMessage = student.callNumber(15);
 
-        @Test
-        void should_return_fizz_whizz_when_divisible_given_3_and_7() {
-            //give
-            FizzBuzz student = new FizzBuzz();
-            String expectedMessage = "FizzWhizz";
+        //then
+        assertEquals(expectedMessage, actualMessage);
+    }
 
-            //when
-            String actualMessage = student.callNumber(21);
+    @Test
+    void should_return_fizz_whizz_when_divisible_given_3_and_7() {
+        //give
+        FizzBuzz student = new FizzBuzz();
+        String expectedMessage = "FizzWhizz";
 
-            //then
-            assertEquals(expectedMessage,actualMessage);
-         }
+        //when
+        String actualMessage = student.callNumber(21);
 
-         @Test
-         void should_return_buzz_whizz_when_divisible_given_5_and_7() {
-             //give
-             FizzBuzz student = new FizzBuzz();
-             String expectedMessage = "BuzzWhizz";
+        //then
+        assertEquals(expectedMessage, actualMessage);
+    }
 
-             //when
-             String actualMessage = student.callNumber(35);
+    @Test
+    void should_return_buzz_whizz_when_divisible_given_5_and_7() {
+        //give
+        FizzBuzz student = new FizzBuzz();
+        String expectedMessage = "BuzzWhizz";
 
-             //then
-             assertEquals(expectedMessage,actualMessage);
-          }
+        //when
+        String actualMessage = student.callNumber(35);
 
-          @Test
-          void should_return_fizz_buzz_whizz_when_divisible_given_3_5_7() {
-              //give
-              FizzBuzz student = new FizzBuzz();
-              String expectedMessage = "FizzBuzzWhizz";
+        //then
+        assertEquals(expectedMessage, actualMessage);
+    }
 
-              //when
-              String actualMessage = student.callNumber(105);
+    @Test
+    void should_return_fizz_buzz_whizz_when_divisible_given_3_5_7() {
+        //give
+        FizzBuzz student = new FizzBuzz();
+        String expectedMessage = "FizzBuzzWhizz";
 
-              //then
-              assertEquals(expectedMessage,actualMessage);
-           }
+        //when
+        String actualMessage = student.callNumber(105);
+
+        //then
+        assertEquals(expectedMessage, actualMessage);
+    }
 }
