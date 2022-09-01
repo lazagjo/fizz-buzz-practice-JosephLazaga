@@ -58,7 +58,7 @@ public class FizzBuzzTest {
        }
 
        @Test
-       void should_return_FizzBuzz_when_divisible_given_3_5() {
+       void should_return_FizzBuzz_when_divisible_given_3_and_5() {
            //give
            FizzBuzz student = new FizzBuzz();
            String expectedMessage = "FizzBuzz";
@@ -69,4 +69,17 @@ public class FizzBuzzTest {
            //then
            assertEquals(expectedMessage,actualMessage);
         }
+
+        @Test
+        void should_return_fizzwhizz_when_divisible_given_3_and_7() {
+            //give
+            FizzBuzz student = new FizzBuzz();
+            String expectedMessage = "FizzWhizz";
+
+            //when
+            String actualMessage = student.callNumber(21);
+
+            //then
+            assertEquals(expectedMessage,actualMessage);
+         }
 }
