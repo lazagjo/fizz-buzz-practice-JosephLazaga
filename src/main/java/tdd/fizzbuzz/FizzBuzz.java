@@ -5,6 +5,8 @@ public class FizzBuzz {
 
         if (order % 3 == 0 && order % 5 == 0) {
             return "FizzBuzz";
+        } else if (order % 3 == 0 && order % 7 == 0) {
+            return "FizzWhizz";
         }
         else if (order % 3 == 0) {
             return "Fizz";
